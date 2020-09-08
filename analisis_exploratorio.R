@@ -20,11 +20,6 @@ list.files(path = "../input/rsna-bone-age")
 data_training <- read.csv("../input/rsna-bone-age/boneage-training-dataset.csv", stringsAsFactors = TRUE)
 
 
-# ******************** LIMPIEZA DE DATOS ********************
-
-# aqui
-
-
 # ******************** ANALISIS EXPLORATORIO ********************
 
 # Resumen de los datos (se incluye la tabla de frecuencias de la variable male)
