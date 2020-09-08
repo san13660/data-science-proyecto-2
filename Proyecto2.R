@@ -33,3 +33,21 @@ View(registrosBoneageIncorrectos)
 ### Se revisa que el contenido de Bonage sea un valor numerico en cada registro
 View(which(!grepl('^[0-9]', registros$boneage)))
 
+### Se revisa que el contenido de ID sea un valor numerico en cada registro
+View(which(!grepl('^[0-9]', registros$id)))
+
+### Sustituir False/True por 0/1
+registros$male <- gsub("False", "0", registros$male)
+registros$male <- gsub("True", "1", registros$male)
+
+### Se revisa la cantidad de archivos de imagenes en el DataSet que son 12611
+length(list.files("boneage-training-dataset/boneage-training-dataset"))
+
+### Se revisa que la cantidad de registros haga match con los archivos de imagenes que son 12611
+nrow(registros)
+
+### Se revisa el resumen de las variables del DataFrame para revisar que la limpieza fuera correcta
+summary(registros)
+
+### Se hace una vista para ver que los datos fueron limpiados correctamente
+View(registros)
