@@ -1,0 +1,8 @@
+/env
+/__pycache__
+/.vscode
+
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
