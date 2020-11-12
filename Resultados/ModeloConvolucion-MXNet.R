@@ -15,10 +15,12 @@
 install.packages("drat", repos="https://cran.rstudio.com")
 drat:::addRepo("dmlc")
 install.packages("mxnet")
+install.packages("imager")
 library(EBImage)
 library(pbapply)
 library(caret)
 library(mxnet)
+library(imager)
 
 # Cargar set de training y test
 data_training <- read.csv("../input/rsna-bone-age/boneage-training-dataset.csv", stringsAsFactors = TRUE)
@@ -102,3 +104,5 @@ predict_probs <- predict(model, data_test)
 predicted_labels <- max.col(t(predict_probs)) - 1
 table(test_data[, 1], predicted_labels)
 sum(diag(table(test_data[, 1], predicted_labels)))/2500
+
+saveRDS(model, "model.rds")
