@@ -1,8 +1,8 @@
 # Data Science - Proyecto 2
-### Rodrigo Samayoa 17332
-### David Soto 17551
-### Christopher Sandoval 13660
-### Fernanda Estrada 14198
+#### Rodrigo Samayoa 17332
+#### David Soto 17551
+#### Christopher Sandoval 13660
+#### Fernanda Estrada 14198
 
 
 ## Instrucciones para ejecutar aplicación
