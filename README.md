@@ -8,17 +8,17 @@
 ## Instrucciones para ejecutar aplicación
 Instalar las siguientes dependencias:
 
-`pip install flask
+`pip install flask`
 
-pip install dash
+`pip install dash`
 
-pip install pandas
+`pip install pandas`
 
-pip install numpy
+`pip install numpy`
 
-pip install matplotlib
+`pip install matplotlib`
 
-pip install tensorflow`
+`pip install tensorflow`
 
 Ejecutar el archivo:
 
